@@ -1,15 +1,29 @@
+import React from 'react';
 import './App.css';
-import Sidebar from './Components/Sidebar'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Skills from './pages/Skills.jsx';
+import Projects from './pages/Comment.jsx';
+import Contact from './pages/Contact.jsx';
+import ProductList from './pages/Projects.jsx';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="App"></div>
-      <Sidebar />
-
-    </Router>
+    <BrowserRouter>
+      <Sidebar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/Skills" element={<Skills />} />          
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </Sidebar>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
