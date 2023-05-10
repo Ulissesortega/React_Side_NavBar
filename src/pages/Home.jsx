@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+
+import { Row, Col, Button } from 'react-bootstrap';
 
 const Home = () => {
     return (
@@ -16,6 +17,10 @@ const Home = () => {
 
                 <Col>
                     <p className='summary'>Jr. Web Developer </p>
+                </Col>
+
+                <Col>
+                    <Button className="">Primary</Button>
                 </Col>
             </Row>
         </div>

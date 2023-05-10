@@ -7,7 +7,7 @@ import About from './pages/About.jsx';
 import Skills from './pages/Skills.jsx';
 import Projects from './pages/Comment.jsx';
 import Contact from './pages/Contact.jsx';
-import ProductList from './pages/Projects.jsx';
+
 
 const App = () => {
   return (
